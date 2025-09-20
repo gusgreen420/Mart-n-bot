@@ -25,3 +25,5 @@ jobs:
       run: flake8 .
     - name: Tests
       run: pytest -q
+    - name: Install package (editable)
+      run: pip install -e .
