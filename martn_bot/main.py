@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from bot.strategy import MartingaleStrategy, MartingaleConfig
+from martn_bot.bot.strategy import MartingaleStrategy, MartingaleConfig
 
 
 def main():
