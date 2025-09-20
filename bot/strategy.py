@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class MartingaleConfig:
     mult: float = 2.0

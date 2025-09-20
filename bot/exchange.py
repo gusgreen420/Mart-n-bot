@@ -4,12 +4,14 @@ from typing import Dict, Any
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
 
+
 def make_client() -> Client:
     key = os.getenv("BINANCE_API_KEY", "")
     secret = os.getenv("BINANCE_API_SECRET", "")
     if not key or not secret:
         raise RuntimeError("Faltan BINANCE_API_KEY / BINANCE_API_SECRET")
     return Client(api_key=key, api_secret=secret)
+
 
 def get_price(symbol: str) -> float:
     client = make_client()
